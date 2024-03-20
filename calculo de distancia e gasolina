@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <locale.h>
+
+void main ()
+{
+setlocale(LC_ALL,"Portuguese");
+float Dist,temp,velo,litr,soma;
+printf("Qual foi o tempo percorrido na viagem: \n");
+scanf("%f",&temp);
+printf("Qual foi a velociade media na viagem: \n");
+scanf("%f",&velo);
+Dist = temp * velo;
+litr = Dist/12;
+printf("E foram consumidos %2.f litros de gasolina \n",litr);
+printf("A distancia percorrida foi de %2.f \n",Dist);
