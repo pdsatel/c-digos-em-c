@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <locale.h>
+
+void main ()
+{
+setlocale(LC_ALL,"Portuguese");
+float cel,far;
+printf("Escreva os graus: \n");
+scanf("%f",&cel);
+far = (9 * cel + 160) / 5;  
+printf("Agora o valor em fahrenheit é de: %2.f",far);
+}
