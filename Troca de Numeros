@@ -1,0 +1,21 @@
+include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <locale.h>
+
+int main ()
+{
+int num1,num2,troca;
+printf("Escreva o pimeiro numero: \n");
+scanf("%d",&num1);
+printf("Escreva o segundo numero: \n");
+scanf("%d",&num2);
+troca = num1;
+num1 = num2;
+num2 = troca;
+printf("O novo valor do primeiro numero e: %d \n",num1);
+printf("O novo valor do segundo numero e: %d \n",num2);
+
+
+}
