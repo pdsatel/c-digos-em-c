@@ -1,0 +1,31 @@
+#include <iostream>
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <locale.h>
+#include  <cmath>
+
+
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL,"Portuguese");
+int la,lb,lc;
+cout<< "Digite o valor dos 3 lados do triagulo: ";
+cin>> la>>lb>>lc;
+
+	
+if ((la==lb) && (lb==lc))
+  	cout<<"O triangulo é equilatero";
+  else
+  if ((la!=lb)&&(lb!=lc)&&(lc!=la))
+  	cout<<"O triangulo é escaleno"; 
+  else
+  {
+	  cout<<"O triangulo é iscoceles";
+  }
+}
+	
