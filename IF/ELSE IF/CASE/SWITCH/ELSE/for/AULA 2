@@ -1,0 +1,267 @@
+/*#include <iostream>
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <locale.h>
+#include  <cmath>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+setlocale(LC_ALL,"Portuguese");
+float num1,num2 ;
+char op ;
+cout<<"entre com numero operador numero: \n";
+cin>> num1>>op>>num2;	if(op == '+')
+cout<< "=" << setprecision(2) << num1 + num2;
+else if (op == '-')
+cout<< "=" << setprecision(2) << num1 - num2;
+else if (op == ' /')		
+cout<< "=" << setprecision(2) << num1 / num2;
+ else if (op== ' *')								
+ cout<< "=" << setprecision(2) << num1 * num2;
+else
+cout << "Operador invalido.";
+cout<< endl;
+}*/
+
+/*#include <iostream>
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <locale.h>
+#include  <cmath>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+setlocale(LC_ALL,"Portuguese");
+int contador;
+contador = 1;
+while(contador < 6)
+{
+cout<< "contador = " << contador << endl;
+contador = contador + 1;	
+}
+cout<<"ACABOUU ! ! !" << endl;
+}
+*/
+
+/*#include <iostream>
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <locale.h>
+#include  <cmath>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+setlocale(LC_ALL,"Portuguese");
+int total, num;
+total = 0;
+while (total<20)
+{
+	cout<< "Total = " << total << endl;
+	cout<<"Entre com um numero: ";
+	cin>> num;
+	total = total + num;
+	
+}	
+cout<< " Final total = " << total<< endl;
+}
+*/
+/*#include <iostream>
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <locale.h>
+#include  <cmath>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+setlocale(LC_ALL,"Portuguese");
+int linha,coluna;
+
+linha = 1;
+while(linha <10000)
+{
+	coluna=1;
+while(coluna <10000)
+{
+	cout<< setw(3) << linha * coluna;
+	coluna = coluna + 1;
+}
+{
+	linha = linha +1;
+}
+cout << endl;
+}
+
+	
+}		
+*/
+
+/*#include <iostream>
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <locale.h>
+#include  <cmath>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+setlocale(LC_ALL,"Portuguese");
+int linha,coluna;
+cout<< endl;
+linha = 1;
+while (linha<8)
+{	
+	cout << " \t";
+coluna = 1;
+while (coluna < linha)
+{
+	cout<<"*";
+	coluna = coluna +1;
+}
+cout<<endl;
+linha = linha +1;
+}
+}
+*/
+
+/*#include <iostream>
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <locale.h>
+#include  <cmath>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+setlocale(LC_ALL,"Portuguese");
+int contador;
+for(contador = 0; contador <=5; contador += 1)
+	cout<<"contador = " << contador<< endl;
+cout<< "ACABOUU!!! \n";
+}
+*/
+
+/*#include <iostream>
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <locale.h>
+#include  <cmath>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+setlocale(LC_ALL,"Portuguese");
+ int contador,total;
+ for (contador=0, total = 0 ; contador <10; contador += 1 ){
+	 total +=contador;
+	 cout<< "contador = "<< contador << ", total = "<< total << endl;
+ }
+ }
+*/
+/*#include <iostream>
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <locale.h>
+#include  <cmath>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+setlocale(LC_ALL,"Portuguese");
+int i,soma ;
+soma=0;
+for(i=30; i >= 5;i -= 1 ){
+	if( (i%3)== 0){
+	cout<<"\t"<< setw(2) << i << endl;
+	soma += i;
+		
+	}
+ }
+ cout<< "\t soma = "<< soma << endl;
+}
+*/
+
+
+
+/*#include <iostream>
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <locale.h>
+#include  <cmath>
+#include <iomanip>
+#include<windows.h>
+using namespace std;
+
+int main()
+{
+system("Color C");
+setlocale(LC_ALL,"Portuguese");
+float num1 ,num2;
+char op;
+cout<< "Entre com numero operador numero: \n";
+cin>> num1>>op>>num2;
+
+switch (op){
+case '+':
+	cout<<" = " << setprecision(2) << num1 + num2;
+	break;
+case '-':
+	cout<< " = "<< setprecision(2) << num1 - num2;
+	break;
+case '*':
+	cout<< "=" << setprecision(2) << num1 * num2;
+case'/':
+	cout<< " = " << setprecision(2) <<num1 / num2;
+	break;
+default:
+cout<< " Operador invalido.";
+break;
+}
+}
+*/
