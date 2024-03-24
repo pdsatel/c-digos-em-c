@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "Portuguese");
+    string time;
+
+    cout << "Escreva o nome de um time: ";
+    cin >> time;
+
+    if (time == "palmeiras" || time == "santos" || time == "sao paulo" ||time == "corinthians")
+        cout << "O time é paulista" << endl;
+    else if (time == "flamengo" || time == "vasco" || time == "fluminense"||time == "botafogo")
+        cout << "O time é carioca" << endl;
+    else
+        cout << "Time não reconhecido." << endl;
+
+    return 0;
+}
