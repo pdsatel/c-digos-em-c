@@ -1,0 +1,52 @@
+#include <iostream>
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <locale.h>
+#include  <cmath>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+setlocale(LC_ALL,"Portuguese");
+
+    int escolha;
+    
+
+     {
+        cout << "Menu:\n";
+        cout << "1. Opção 1\n";
+        cout << "2. Opção 2\n";
+        cout << "3. Opção 3\n";
+        cout << "4. Sair\n";
+        cout << "Escolha uma opção: ";
+        cin >> escolha;
+
+        switch (escolha) {
+            case 1:
+                cout << "Você escolheu a opção 1.\n";
+                break;
+            case 2:
+                cout << "Você escolheu a opção 2.\n";
+                break;
+            case 3:
+                cout << "Você escolheu a opção 3.\n";
+                break;
+            case 4:
+                cout << "Saindo do programa...\n";
+                break;
+            default:
+                cout << "Opção inválida. Tente novamente.\n";
+        }
+
+        cout << "\n"; // Linha em branco para separar as iterações do menu
+
+    } while (escolha != 4);
+
+    return 0;
+}
+
