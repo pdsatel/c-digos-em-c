@@ -1,10 +1,18 @@
 #include <iostream>
-#include <string>
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <locale.h>
+#include  <cmath>
+#include <iomanip>
 
 using namespace std;
 
-int main() {
-    setlocale(LC_ALL, "Portuguese");
+int main()
+{
+setlocale(LC_ALL,"Portuguese");
     string time;
 
     cout << "Escreva o nome de um time: ";
