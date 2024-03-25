@@ -1,0 +1,45 @@
+setlocale(LC_ALL,"Portuguese");
+void MENU();
+    int escolha;
+    string nome;
+    {
+        cout<< "Escreva seu nome: \n";
+       cin>> nome;
+      
+        }
+		     {
+		     		
+        cout << "Menu:\n";
+        cout << "1. Começar \n";
+        cout << "2. Como jogar\n";
+        cout << "3. Creditos \n";
+        cout << "4. Sair\n";
+        cout << "Escolha uma opção: ";
+        cin >> escolha;
+        switch (escolha) {
+            case 1:
+               
+                break;
+            case 2:
+                cout << " O jogo é basicamento um fazendeiro que tem que passar,uma Ovelha,um Lobo e um Alface\n";
+                break;
+            case 3:
+                cout << "Satel Pedro. 2024\n";
+                break;
+            case 4:
+                cout << "Saindo do programa...\n";
+                break;
+            default:
+                cout << "Opção inválida. Tente novamente.\n";
+        }
+        cout << "\n"; 
+    } while (escolha != 4);
+
+    
+    
+
+		
+	
+}
+
+
