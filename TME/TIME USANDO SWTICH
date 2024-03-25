@@ -1,0 +1,54 @@
+#include <iostream>
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <locale.h>
+#include  <cmath>
+#include <iomanip>
+
+using namespace std;
+int main()
+
+{
+setlocale(LC_ALL,"Portuguese");
+ int time;
+        cout << "1. FLAMENGO \n";
+        cout << "2. PALMEIRAS \n";
+        cout << "3. VASCO \n";
+        cout << "4. CORINTHIANS \n";
+        cout << "5. FLUMINENSE \n";
+        cout << "6. SANTOS \n";
+        cout << "7. SAO PAULO \n";
+        cin >> time;
+        switch (time) {
+            case 1:
+            	cout<< "Time é carioca \n";
+                break;
+            case 2:
+                cout << "Time é paulista \n";
+                break;
+            case 3:
+                cout << "Time é carioca \n";
+                break;
+            case 4:
+                cout << "Time é paulista \n";
+                break;
+            case 5:
+                cout << "Time é carioca \n";
+                break;
+            case 6:
+                cout << "Time é paulista\n";
+                break;
+            case 7:
+                cout << "Time é paulista \n";
+                break;
+            
+            default:
+                cout << "Opção inválida. Tente novamente.\n";
+        }
+        cout<< "\n";
+	while(time!=7 )
+return 0;
+}	       
