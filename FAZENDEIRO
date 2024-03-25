@@ -1,13 +1,25 @@
-setlocale(LC_ALL,"Portuguese");
-void MENU();
+#include <iostream>
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <locale.h>
+#include  <cmath>
+#include <iomanip>
+
+using namespace std;
+void MENU(); 
+int main(){
     int escolha;
-    string nome;
+    setlocale(LC_ALL,"Portuguese");
+    string (nome);
     {
         cout<< "Escreva seu nome: \n";
        cin>> nome;
       
-        }
-		     {
+        }	
+	  do{
 		     		
         cout << "Menu:\n";
         cout << "1. Começar \n";
@@ -34,6 +46,8 @@ void MENU();
         }
         cout << "\n"; 
     } while (escolha != 4);
+    
+    return 0;
 
     
     
@@ -41,5 +55,6 @@ void MENU();
 		
 	
 }
+
 
 
