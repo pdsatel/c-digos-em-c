@@ -9,26 +9,35 @@
 #include <iomanip>
 
 using namespace std;
-
 int main()
 {
 setlocale(LC_ALL,"Portuguese");
-
     int escolha;
-    
-
+    int num,num1,num2;
+    int media;
+    string nome;
+    {
+        cout<< "Escreva seu nome: \n";
+       cin>> nome;
+        }
      {
         cout << "Menu:\n";
-        cout << "1. Opção 1\n";
+        cout << "1. Notas\n";
         cout << "2. Opção 2\n";
         cout << "3. Opção 3\n";
         cout << "4. Sair\n";
         cout << "Escolha uma opção: ";
         cin >> escolha;
-
         switch (escolha) {
             case 1:
-                cout << "Você escolheu a opção 1.\n";
+                cout << "Digite suas 3 notas.\n";
+                cin>> num1 >> num2 >> num;
+                 media = (num+num1+num2)/3.0;
+                 cout<<fixed<<setprecision(2);            
+                 if (media>7)
+                 cout<<"Aluno "<<nome<<" aprovado"<<endl;
+                 else
+                 cout<<"Aluno "<<nome<< " Reprovado"<<endl;
                 break;
             case 2:
                 cout << "Você escolheu a opção 2.\n";
@@ -42,11 +51,11 @@ setlocale(LC_ALL,"Portuguese");
             default:
                 cout << "Opção inválida. Tente novamente.\n";
         }
-
-        cout << "\n"; // Linha em branco para separar as iterações do menu
-
+        cout << "\n"; 
     } while (escolha != 4);
-
     return 0;
 }
+
+
+
 
