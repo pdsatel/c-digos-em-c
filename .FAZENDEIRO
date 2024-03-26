@@ -1,5 +1,4 @@
 #include <iostream>
-#include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -7,54 +6,120 @@
 #include <locale.h>
 #include  <cmath>
 #include <iomanip>
-
+#include <cstdlib>
 using namespace std;
-void MENU(); 
-int main(){
-    int escolha;
-    setlocale(LC_ALL,"Portuguese");
-    string (nome);
-    {
-        cout<< "Escreva seu nome: \n";
-       cin>> nome;
-      
-        }	
-	  do{
-		     		
-        cout << "Menu:\n";
-        cout << "1. Começar \n";
-        cout << "2. Como jogar\n";
-        cout << "3. Creditos \n";
-        cout << "4. Sair\n";
-        cout << "Escolha uma opção: ";
-        cin >> escolha;
-        switch (escolha) {
-            case 1:
-               
-                break;
-            case 2:
-                cout << " O jogo é basicamento um fazendeiro que tem que passar,uma Ovelha,um Lobo e um Alface\n";
-                break;
-            case 3:
-                cout << "Satel Pedro. 2024\n";
-                break;
-            case 4:
-                cout << "Saindo do programa...\n";
-                break;
-            default:
-                cout << "Opção inválida. Tente novamente.\n";
-        }
-        cout << "\n"; 
-    } while (escolha != 4);
-    
-    return 0;
-
-    
-    
-
-		
+void ANIMAL (){
 	
 }
 
+void MENU(){
+	int escolha;
+	int ovelha, lobo, planta;
+	cout << "      MENU\n";
+  cout << "1. Começar \n";
+  cout << "2. Como jogar\n";
+  cout << "3. Creditos \n";
+  cout << "4. Sair\n";
+  cout << "Escolha uma opção: ";
+  cin >> escolha;
+  system("clear||cls");
+        switch (escolha) {
+            case 1: 
+            	cout<< "Olá fazendeiro "<<nome<< ", você poderia me ajudar à atravessar o meu lobo,minha ovelha e meu repolho ";
+            	cout<<"  de estimação para o outro lado do lago, porém você tera alguns problemas, resolva eles";
+  	    	  system("clear || cls");
+     			cout<<"1.ovelha;
+     			cout<<"2.lobo;
+     			cout<<"3.repolho;
+     			cin>>ovelha>>lobo>>pa
 
+              break;
+            case 2:
+                cout << " O jogo é basicamento um fazendeiro que tem que passar,uma Ovelha,um Lobo e um Alface aonde\n";
+                MENU();
+                
+                break;
+            case 3:
+                cout << "Satel Pedro. 2024\n";
+                MENU();
+                break;
+            case 4:
+                cout << "Saindo do programa...\n";
+                MENU();
+                break;
+            default:
+                cout << "Opção inválida. Tente novamente.\n";
 
+        }
+}
+
+    
+void barco(){
+	
+cout<< "                      /||                    "<<endl;
+cout<< "                     / ||                    "<<endl;	
+cout<< "                    /  ||                    "<<endl;	
+cout<< "                   /   ||                    "<<endl;	
+cout<< "                  /    ||                    "<<endl;	
+cout<< "                 /     ||                    "<<endl;	
+cout<< "                /      ||                    "<<endl;	
+cout<< "                -------||                    "<<endl;	
+cout<< " ______________________||____________________"<<endl;	
+cout<< " \                                         / "<<endl;	
+cout<< "  \                                       /  "<<endl;
+cout<< "   \                                     /   "<<endl;	
+cout<< "    -------------------------------------    "<<endl;
+}
+int main(){
+	
+  int ovelha, lobo, planta;
+  string (nome);
+  int i, a, escolha;
+setlocale(LC_ALL,"Portuguese");
+	
+cout<< "BEM-VINDO!!!!!!";
+getchar();
+cout<< endl;
+cout<< "O seu trabalho é levar a ovelha, o lobo e a planta do outro lado do lago"<<endl;
+cout<< endl;
+cout<< "Aperte o enter para cotinuar:";
+getchar();
+system("clear||cls");
+cout<< "Dgite o seu nome: "<<endl;	
+cin>>nome;
+system("clear||cls");
+
+cout << "      MENU\n";
+  cout << "1. Começar \n";
+  cout << "2. Como jogar\n";
+  cout << "3. Creditos \n";
+  cout << "4. Sair\n";
+  cout << "Escolha uma opção: ";
+  cin >> escolha;
+  system("clear||cls");
+        switch (escolha) {
+            case 1: 
+            	
+
+              break;
+            case 2:
+                cout << " O jogo é basicamento um fazendeiro que tem que passar,uma Ovelha,um Lobo e um Alface aonde\n";
+                
+                MENU();
+                break;
+            case 3:
+                cout << "Satel Pedro. 2024\n";
+               MENU(); 
+                break;
+            case 4:
+                cout << "Saindo do programa...\n";
+                MENU();
+                break;
+            default:
+                cout << "Opção inválida. Tente novamente.\n";
+
+        }
+        cout << "\n"; 
+
+    return 0;
+}
