@@ -13,8 +13,10 @@ void ANIMAL (){
 }
 
 void MENU(){
+	
 	int escolha;
-	int ovelha, lobo, planta;
+	
+	
 	cout << "      MENU\n";
   cout << "1. Começar \n";
   cout << "2. Como jogar\n";
@@ -23,34 +25,45 @@ void MENU(){
   cout << "Escolha uma opção: ";
   cin >> escolha;
   system("clear||cls");
-        switch (escolha) {
-            case 1: 
-            	cout<< "Olá fazendeiro "<<nome<< ", você poderia me ajudar à atravessar o meu lobo,minha ovelha e meu repolho ";
+        if (escolha == 1) {
+             
+             cout<< "Olá fazendeiro "<< ", você poderia me ajudar à atravessar o meu lobo,minha ovelha e meu repolho ";
             	cout<<"  de estimação para o outro lado do lago, porém você tera alguns problemas, resolva eles";
-  	    	  system("clear || cls");
-     			cout<<"1.ovelha;
-     			cout<<"2.lobo;
-     			cout<<"3.repolho;
-     			cin>>ovelha>>lobo>>pa
-
-              break;
-            case 2:
+  	    	  system("clear||cls");
+  	    	  
+			 
+			 cout<< "escolha um dos objetos para atravessar para o lado direito do lago";
+			 cout<< "1.ovelha"<< endl;
+			 cout<< "2.lobo"<< endl;	
+			 cout<< "3.repolho"<< endl;
+			 
+			 
+			 				 			 					 
+		}
+		else if(escolha == 2){			 			 																																									          		              
+            
                 cout << " O jogo é basicamento um fazendeiro que tem que passar,uma Ovelha,um Lobo e um Alface aonde\n";
+                
                 MENU();
                 
-                break;
-            case 3:
+		}
+        else if(escolha == 3){    
                 cout << "Satel Pedro. 2024\n";
-                MENU();
-                break;
-            case 4:
+               MENU(); 
+                
+		}
+        else if (escolha == 4 ){ 
                 cout << "Saindo do programa...\n";
                 MENU();
-                break;
-            default:
+                
+		}
+        else {
                 cout << "Opção inválida. Tente novamente.\n";
 
-        }
+		}
+        cout << "\n"; 
+
+    
 }
 
     
@@ -71,12 +84,13 @@ cout<< "   \                                     /   "<<endl;
 cout<< "    -------------------------------------    "<<endl;
 }
 int main(){
-	
-  int ovelha, lobo, planta;
+  bool a;	
+  int animal[3];
+  int ov, re, lo;
   string (nome);
-  int i, a, escolha;
+  int i, escolha, b;
 setlocale(LC_ALL,"Portuguese");
-	
+a = 0;	
 cout<< "BEM-VINDO!!!!!!";
 getchar();
 cout<< endl;
@@ -97,28 +111,51 @@ cout << "      MENU\n";
   cout << "Escolha uma opção: ";
   cin >> escolha;
   system("clear||cls");
-        switch (escolha) {
-            case 1: 
-            	
-
-              break;
-            case 2:
+        if (escolha == 1) {
+             
+             cout<< "Olá fazendeiro "<<nome<< ", você poderia me ajudar à atravessar o meu lobo,minha ovelha e meu repolho ";
+   	          cout<<"  de estimação para o outro lado do lago, porém você tera alguns problemas, resolva eles";
+  	    	  system("clear||cls");
+  	    	  i =0;
+  	   	      do{
+			 
+			 	 cout<< "escolha um dos objetos para atravessar para o lado direito do lago"<<endl;
+			 	 cout<< "1.ovelha"<< endl;
+			 	 cout<< "2.lobo"<< endl;	
+			 	 cout<< "3.repolho"<< endl;
+			 	 cin>>i;
+			 
+				} 
+			while (i == 0 || i ==2 || i==3);
+			cout<<"Você escolheu corretamente";
+			system("clear || cls");
+			cout<<"Escolha outro objeto para levar do lado direito do lago \n";
+			cout<< "2.lobo"<< endl;	
+			 	 cout<< "3.repolho"<< endl;
+			
+			 				 			 					 
+		}
+		else if(escolha == 2){			 			 																																									          		              
+            
                 cout << " O jogo é basicamento um fazendeiro que tem que passar,uma Ovelha,um Lobo e um Alface aonde\n";
                 
                 MENU();
-                break;
-            case 3:
+                
+		}
+        else if(escolha == 3){    
                 cout << "Satel Pedro. 2024\n";
                MENU(); 
-                break;
-            case 4:
+                
+		}
+        else if (escolha == 4 ){ 
                 cout << "Saindo do programa...\n";
                 MENU();
-                break;
-            default:
+                
+		}
+        else {
                 cout << "Opção inválida. Tente novamente.\n";
 
-        }
+		}
         cout << "\n"; 
 
     return 0;
