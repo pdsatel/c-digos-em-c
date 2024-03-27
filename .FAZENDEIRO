@@ -8,8 +8,22 @@
 #include <iomanip>
 #include <cstdlib>
 using namespace std;
-void ANIMAL (){
-	
+void barco1 (){
+
+                                                     cout<< "                      /||                    "<<endl;
+                                                     cout<< "                     / ||                    "<<endl;	
+                                                     cout<< "                    /  ||                    "<<endl;	
+                                                     cout<< "                   /   ||                    "<<endl;	
+                                                     cout<< "                  /    ||                    "<<endl;	
+                                                     cout<< "                 /     ||                    "<<endl;	
+                                                     cout<< "                /      ||                    "<<endl;	
+                                                     cout<< "                -------||                    "<<endl;	
+                                                     cout<< " ______________________||____________________"<<endl;	
+                                                     cout<< " \                                         / "<<endl;	
+                                                     cout<< "  \                                       /  "<<endl;
+                                                     cout<< "   \                                     /   "<<endl;	
+                                                     cout<< "    -------------------------------------    "<<endl;	
+		
 }
 
 void MENU(){
@@ -81,12 +95,12 @@ cout<< " ______________________||____________________"<<endl;
 cout<< " \                                         / "<<endl;	
 cout<< "  \                                       /  "<<endl;
 cout<< "   \                                     /   "<<endl;	
-cout<< "    -------------------------------------    "<<endl;
+cout<< "    -------------------------------------    "<<endl; 
 }
 int main(){
   bool a;	
   int animal[3];
-  int ov, re, lo;
+  int ov, re, lo,pe,yu;
   string (nome);
   int i, escolha, b;
 setlocale(LC_ALL,"Portuguese");
@@ -94,9 +108,7 @@ a = 0;
 cout<< "BEM-VINDO!!!!!!";
 getchar();
 cout<< endl;
-cout<< "O seu trabalho é levar a ovelha, o lobo e a planta do outro lado do lago"<<endl;
-cout<< endl;
-cout<< "Aperte o enter para cotinuar:";
+cout<< "Para todas a ações desse jogo aperte enter para prosseguir... aperte enter";
 getchar();
 system("clear||cls");
 cout<< "Dgite o seu nome: "<<endl;	
@@ -114,43 +126,108 @@ cout << "      MENU\n";
         if (escolha == 1) {
              
              cout<< "Olá fazendeiro "<<nome<< ", você poderia me ajudar à atravessar o meu lobo,minha ovelha e meu repolho ";
-   	          cout<<"  de estimação para o outro lado do lago, porém você tera alguns problemas, resolva eles";
-  	    	  system("clear||cls");
+   	          cout<<"  de estimação para o outro lado do lago, porém você tera alguns problemas, resolva eles\n";
+  	    	  cout<<"\n";
+  	    	  cout<<"\n";
   	    	  i =0;
   	   	      do{
 			 
-			 	 cout<< "escolha um dos objetos para atravessar para o lado direito do lago"<<endl;
-			 	 cout<< "1.ovelha"<< endl;
-			 	 cout<< "2.lobo"<< endl;	
-			 	 cout<< "3.repolho"<< endl;
+              cout<< "Escolha um dos animais de estimação correto para atravessar ao lado direito do lago"<<endl;
+			 	 cout<< "1.Ovelha"<< endl;
+			 	 cout<< "2.Lobo"<< endl;	
+			 	 cout<< "3.Repolho"<< endl;
 			 	 cin>>i;
-			 
-				} 
+			 if (i == 2 || i == 3)
+			 	cout<< "Você escolheu errado repita à sua escolha.\n ";
+			     cout<< "\n";
+				}
+		     	 
 			while (i == 0 || i ==2 || i==3);
+				
+			do{
+				ov=0;
 			cout<<"Você escolheu corretamente";
 			system("clear || cls");
-			cout<<"Escolha outro objeto para levar do lado direito do lago \n";
+			cout<<"Voce voltou para o lado esquerdo,escolha outro animal de estimação para levar ao lado direito do lago \n";
 			cout<< "2.lobo"<< endl;	
 			 	 cout<< "3.repolho"<< endl;
+					cin>>lo;
+				 if (lo==3)
+				 	
+				 {
+					cout<<"Voce escolher corretamente,continue o trabalho \n";
+					
+					
+				do{ 
+					
+			    	ov = 1;
+			    	system("clear || cls");
+			    	cout<<"Voce escolher corretamente,continue o trabalho \n";
+			    	cout<<"\n";
+			    	cout<<"Decida se você quer voltar sozinho ou com algum objeto levado \n";
+			    	cout<<"1.Voltar sozinho \n";
+			    	cout<<"2.Repolho \n";
+			    	cout<<"3.Ovelha \n";
+			    	cin>>re;
+			    	
+			    	 if (re == 3) {
+					do{
+						
+					pe = 0;
+    				cout<<"Voce chegou do lado esquerdo do lago, escolha\n";
+    				cout<<"1.Deixar a ovelha e voltar com o lobo\n";
+    				cout<<"2.Deixar o lobo e voltar com a ovelha\n";
+    				cout<<"3.Deixar a ovelha e o lobo e voltar sozinho\n";
+    				cin>>pe;
+			    	if (pe == 1){
+					 
+						
+						cout<<"Voce deixou o lobo do lado direito e,agora volte para buscar a ovelha\n";
+						cout<< "      Com isso você terminou o jogo PARABENSS!!!!"<<nome;
+					}
+						
+						
+					}
+					
+					
+			    	while(pe==2 || pe== 3);	
+					}
+				
+				}
+				
+				while(re == 1 || re == 2);
+				
+			  }	
 			
-			 				 			 					 
+			}
+			while(ov == 0);	
+				
+		   
+			 			
+							 			 					 
 		}
 		else if(escolha == 2){			 			 																																									          		              
             
-                cout << " O jogo é basicamento um fazendeiro que tem que passar,uma Ovelha,um Lobo e um Alface aonde\n";
-                
+          cout << " O objetivo do jogo é você passar, uma ovelha, um lobo e um repolho para o outro";
+          cout << "lado do lago.";  
+		  cout<<"\n";
+		  cout << "Porém você não pode deixar a ovelha sozinha com o repolho\n";
+		  cout<<"\n";
+		  cout << "Também não pode deixar o lobo com a ovelha sozinhos\n ";
+		  cout<<"\n";   
                 MENU();
                 
 		}
         else if(escolha == 3){    
-                cout << "Satel Pedro. 2024\n";
+                cout << "Pedro Satel. 2024\n";
+                cout << "Yago Soares. 2024\n";
                MENU(); 
                 
 		}
-        else if (escolha == 4 ){ 
-                cout << "Saindo do programa...\n";
-                MENU();
-                
+        else if (escolha == 4 ){
+			cout << "Saindo do programa...\n";
+            
+                return 0;   
 		}
         else {
                 cout << "Opção inválida. Tente novamente.\n";
