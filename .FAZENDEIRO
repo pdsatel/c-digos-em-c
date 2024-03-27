@@ -146,14 +146,13 @@ cout << "      MENU\n";
 				
 			do{
 				ov=0;
-			cout<<"Você escolheu corretamente";
-			system("clear || cls");
+			cout<<"Você escolheu corretamente\n";		
 			cout<<"Voce voltou para o lado esquerdo,escolha outro animal de estimação para levar ao lado direito do lago \n";
 			cout<< "2.lobo"<< endl;	
 			 	 cout<< "3.repolho"<< endl;
 					cin>>lo;
-				 if (lo==3)
-				 	
+			system("clear||cls");		
+				 if (lo==3)	
 				 {
 					cout<<"Voce escolher corretamente,continue o trabalho \n";
 					
@@ -198,7 +197,19 @@ cout << "      MENU\n";
 				while(re == 1 || re == 2);
 				
 			  }	
+			   else if (lo == 2){
+			   do{
+			   	ov=0;
+			cout<<"Você escolheu errado tente novamente\n";
 			
+			cout<<"Voce voltou para o lado esquerdo,escolha outro animal de estimação para levar ao lado direito do lago \n";
+			cout<< "2.lobo"<< endl;	
+			 	 cout<< "3.repolho"<< endl;
+					cin>>lo;
+					system("clear||cls");
+			   }
+			   while(lo == 2);
+			   }		
 			}
 			while(ov == 0);	
 				
