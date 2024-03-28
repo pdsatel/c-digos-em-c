@@ -8,23 +8,78 @@
 #include <iomanip>
 #include <cstdlib>
 using namespace std;
+void barcoov(){
+	
+cout<< "                      /||                    "<<endl;
+cout<< "                     / ||                    "<<endl;	
+cout<< "                    /  ||                    "<<endl;	
+cout<< "                   /   ||                    "<<endl;	
+cout<< "                  /    ||                    "<<endl;	
+cout<< "                 /     ||                    "<<endl;	
+cout<< "                /      ||                    "<<endl;	
+cout<< "                -------||                    "<<endl;	
+cout<< " ______________________||____________________"<<endl;	
+cout<< " \\  OVELHA                                 / "<<endl;	
+cout<< "  \\                                       /  "<<endl;
+cout<< "   \\                                     /   "<<endl;	
+cout<< "    -------------------------------------    "<<endl; 
+}
+void barco3 (){
+
+    cout << setw(85) << "/||" << endl;
+    cout << setw(85) << "/ ||" << endl;
+    cout << setw(85) << "/  ||" << endl;
+    cout << setw(85) << "/   ||" << endl;
+    cout << setw(85) << "/    ||" << endl;
+    cout << setw(85) << "/     ||" << endl;
+    cout << setw(85) << "/      ||" << endl;
+    cout << setw(85) << "-------||" << endl;
+    cout << setw(105) << "______________________||____________________" << endl;
+    cout << setw(73) << "\\   REPOLHO" << setw(32) << "/" << endl;
+    cout << setw(64) << "\\" << setw(40) << "/" << endl;
+    cout << setw(65) << "\\" << setw(38) << "/" << endl;
+    cout << setw(102) << "-------------------------------------" << endl;
+
+    
+}
+void barco2 (){
+
+    cout << setw(85) << "/||" << endl;
+    cout << setw(85) << "/ ||" << endl;
+    cout << setw(85) << "/  ||" << endl;
+    cout << setw(85) << "/   ||" << endl;
+    cout << setw(85) << "/    ||" << endl;
+    cout << setw(85) << "/     ||" << endl;
+    cout << setw(85) << "/      ||" << endl;
+    cout << setw(85) << "-------||" << endl;
+    cout << setw(105) << "______________________||____________________" << endl;
+    cout << setw(72) << "\\   OVELHA" << setw(33) << "/" << endl;
+    cout << setw(64) << "\\" << setw(40) << "/" << endl;
+    cout << setw(65) << "\\" << setw(38) << "/" << endl;
+    cout << setw(102) << "-------------------------------------" << endl;
+
+    
+}
 void barco1 (){
 
-                                                     cout<< "                      /||                    "<<endl;
-                                                     cout<< "                     / ||                    "<<endl;	
-                                                     cout<< "                    /  ||                    "<<endl;	
-                                                     cout<< "                   /   ||                    "<<endl;	
-                                                     cout<< "                  /    ||                    "<<endl;	
-                                                     cout<< "                 /     ||                    "<<endl;	
-                                                     cout<< "                /      ||                    "<<endl;	
-                                                     cout<< "                -------||                    "<<endl;	
-                                                     cout<< " ______________________||____________________"<<endl;	
-                                                     cout<< " \                                         / "<<endl;	
-                                                     cout<< "  \                                       /  "<<endl;
-                                                     cout<< "   \                                     /   "<<endl;	
-                                                     cout<< "    -------------------------------------    "<<endl;	
-		
+    cout << setw(85) << "/||" << endl;
+    cout << setw(85) << "/ ||" << endl;
+    cout << setw(85) << "/  ||" << endl;
+    cout << setw(85) << "/   ||" << endl;
+    cout << setw(85) << "/    ||" << endl;
+    cout << setw(85) << "/     ||" << endl;
+    cout << setw(85) << "/      ||" << endl;
+    cout << setw(85) << "-------||" << endl;
+    cout << setw(105) << "______________________||____________________" << endl;
+    cout << setw(70) << "\\   LOBO" << setw(35) << "/" << endl;
+    cout << setw(64) << "\\" << setw(40) << "/" << endl;
+    cout << setw(65) << "\\" << setw(38) << "/" << endl;
+    cout << setw(102) << "-------------------------------------" << endl;
+
+    
 }
+
+
 
 void MENU(){
 	
@@ -92,9 +147,9 @@ cout<< "                 /     ||                    "<<endl;
 cout<< "                /      ||                    "<<endl;	
 cout<< "                -------||                    "<<endl;	
 cout<< " ______________________||____________________"<<endl;	
-cout<< " \                                         / "<<endl;	
-cout<< "  \                                       /  "<<endl;
-cout<< "   \                                     /   "<<endl;	
+cout<< " \\                                         / "<<endl;	
+cout<< "  \\                                       /  "<<endl;
+cout<< "   \\                                     /   "<<endl;	
 cout<< "    -------------------------------------    "<<endl; 
 }
 int main(){
@@ -114,7 +169,7 @@ system("clear||cls");
 cout<< "Dgite o seu nome: "<<endl;	
 cin>>nome;
 system("clear||cls");
-																								
+barcoov();																							
   cout << "      MENU\n";
   cout << "1. Começar \n";
   cout << "2. Como jogar\n";
