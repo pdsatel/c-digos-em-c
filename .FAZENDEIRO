@@ -8,6 +8,22 @@
 #include <iomanip>
 #include <cstdlib>
 using namespace std;
+void barcofinal(){
+	
+cout<< "                      /||                    "<<endl;
+cout<< "                     / ||                    "<<endl;	
+cout<< "                    /  ||                    "<<endl;	
+cout<< "                   /   ||                    "<<endl;	
+cout<< "                  /    ||                    "<<endl;	
+cout<< "                 /     ||                    "<<endl;	
+cout<< "                /      ||                    "<<endl;	
+cout<< "                -------||                    "<<endl;	
+cout<< " ______________________||____________________"<<endl;	
+cout<< " \\     PARABESNSS VOCE CONSEGUIU!!!!!      / "<<endl;	
+cout<< "  \\                                       /  "<<endl;
+cout<< "   \\                                     /   "<<endl;	
+cout<< "    -------------------------------------    "<<endl; 
+}
 void barcoov(){
 	
 cout<< "                      /||                    "<<endl;
@@ -168,8 +184,7 @@ getchar();
 system("clear||cls");
 cout<< "Dgite o seu nome: "<<endl;	
 cin>>nome;
-system("clear||cls");
-barcoov();																							
+system("clear||cls");																							
   cout << "      MENU\n";
   cout << "1. Começar \n";
   cout << "2. Como jogar\n";
@@ -188,10 +203,13 @@ barcoov();
   	   	      do{
 			 
               cout<< "Escolha um dos animais de estimação correto para atravessar ao lado direito do lago"<<endl;
+              cout<<"\n";
+              barco();
 			 	 cout<< "1.Ovelha"<< endl;
 			 	 cout<< "2.Lobo"<< endl;	
 			 	 cout<< "3.Repolho"<< endl;
 			 	 cin>>i;
+			 
 			 if (i == 2 || i == 3)
 			 	cout<< "Você escolheu errado repita à sua escolha.\n ";
 			     cout<< "\n";
@@ -200,12 +218,24 @@ barcoov();
 			while (i == 0 || i ==2 || i==3);
 				
 			do{
-			cout<<"Você escolheu corretamente\n";		
+			cout<<"Você escolheu corretamente\n";
+			cout<<"\n";
+			
+			barco2();
+			cout<<"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n";	
+			cout<<"\n";
+			system("clear||cls");
+			getchar();
+			barco();	
+			cout<<"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n";
 			cout<<"Voce voltou para o lado esquerdo,escolha outro animal de estimação para levar ao lado direito do lago \n";
 			cout<< "2.lobo"<< endl;	
 			 	 cout<< "3.repolho"<< endl;
 					cin>>lo;
-			system("clear||cls");
+					
+			
+			barco3();
+			cout<<"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n";
 			if (lo == 2)
 				cout<< "Você escolheu errado repita à sua escolha.\n ";
 			     cout<< "\n";
@@ -234,6 +264,8 @@ barcoov();
 				
 				     while(re == 1 || re == 2);	
 			    	 if (re == 3){
+			    	 	barcoov();
+			    	 	cout<<"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n";
 					do{
 						cout<<"Voce escolheu corretamente,continue o trabalho \n";
 					pe = 0;
@@ -251,6 +283,7 @@ barcoov();
     					
     					
 			    	if (pe == 1){
+			    		barcofinal();
 			    		
 					 
 						
