@@ -127,15 +127,15 @@ cout << "      MENU\n";
   cin >> escolha;
   system("clear||cls");
         if (escolha == 1) {
-             cout <<"==============================================================================================================\n";
+             cout <<"================================================================================================================================================\n";
              cout<< "Olá fazendeiro "<<nome<< ", você poderia me ajudar à atravessar o meu lobo,minha ovelha e meu repolho ";
-   	          cout<<"  de estimação para o outro lado do lago.\n"; 
-   	          cout <<"==============================================================================================================\n";
+   	          cout<<"  de estimação para o outro lado do lago\n";
+   	          cout <<"===============================================================================================================================================\n";
   	    	  
-  	    	  cout << "porém você tera alguns problemas, resolva eles\n";
-  	    	  cout <<"==============================================================================================================\n";
+  	    	  cout << "Porém você tera alguns problemas, resolva eles\n";
+  	    	  cout <<"===============================================================================================================================================\n";
   	    	  cout << "Para escolher qualquer opção use o número correspondente a ela dada\n";
-  	    	  cout <<"==============================================================================================================\n";
+  	    	  cout <<"===============================================================================================================================================\n";
   	    	  cout<<"\n";
   	    	  i =0;
   	   	      do{
@@ -154,15 +154,16 @@ cout << "      MENU\n";
 				}
 		     	 
 			while (i == 0 || i ==2 || i==3);
-				
-			do{
 			cout<<"Você escolheu corretamente\n";
 			cout<<"\n";
+				
+			do{
+			
 			
 			barco2();
 			cout<<"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n";	
 			cout<<"\n";
-			system("clear||cls");
+			
 			getchar();
 			barco();	
 			cout<<"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n";
@@ -170,19 +171,25 @@ cout << "      MENU\n";
 			cout<< "2.lobo"<< endl;	
 			 	 cout<< "3.repolho"<< endl;
 					cin>>lo;
-					
-			
-			barco3();
-			cout<<"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n";
-			if (lo == 2)
-				cout<< "Você escolheu errado repita à sua escolha.\n ";
-			     cout<< "\n";
+							
+					   	if (lo == 2)
+					barco1();
+					cout<<"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n";
+			   	   	 system("cls || clear");
+				   	   	cout<< "Você escolheu errado repita à sua escolha.\n ";
+			   	     cout<< "\n";
+				 		
 			}
+		
 			while (lo == 2);		
 				 	
 				 if (lo==3)    {
+				 	 system("cls || clear");
 				
-					 cout<<"Voce escolheu corretamente,continue o trabalho \n";						
+					 cout<<"Voce escolheu corretamente,continue o trabalho \n";
+					 barco3();
+					 cout<<"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n";	
+			     cout<<"\n";						
 				do{ 
 					re = 0;
 			    	
@@ -190,13 +197,14 @@ cout << "      MENU\n";
 			    	cout<<"\n";
 			    	cout<<"Decida se você quer voltar sozinho ou com algum objeto levado \n";
 			    	cout<<"1.Voltar sozinho \n";
-			    	cout<<"2.Repolho \n";
-			    	cout<<"3.Ovelha \n";
+			    	cout<<"2.Voltar com Repolho \n";
+			    	cout<<"3.Voltar com Ovelha \n";
 			    	cin>>re;
 			    	
 			    	system("clear||cls");
 			    	if (re == 2 || re == 1)
 						cout<< "Você escolheu errado repita à sua escolha.\n ";
+						cout<<"\n";
 			     	 	 cout<< "\n";
 					}
 				
@@ -216,6 +224,7 @@ cout << "      MENU\n";
     				{
     				if(pe==2 || pe==3)
     					cout<< "Você escolheu errado repita à sua escolha.\n ";
+    					cout<<"\n";
 			     	 	 cout<< "\n";
 					}
     					
@@ -246,7 +255,7 @@ cout << "      MENU\n";
 		else if(escolha == 2){			 			 																																									          		              
           cout <<"================================================================================================================================================\n";   
           cout << " O objetivo do jogo é você passar, uma ovelha, um lobo e um repolho para o outro";
-          cout << "lado do lago.\n"; 
+          cout << " lado do lago.\n"; 
 		  cout <<"================================================================================================================================================\n";
 		  cout<<"\n";
 		  cout << "Porém você não pode deixar a ovelha sozinha com o repolho\n";
@@ -287,14 +296,14 @@ int main(){
   int i, escolha, b;
 setlocale(LC_ALL,"Portuguese");
 a = 0;	
-cout<< "BEM-VINDO!!!!!!";
+cout<< "Para todas a ações desse jogo aperte enter para prosseguir... Aperte enter";
 getchar();
 cout<< endl;
-cout<< "Para todas a ações desse jogo aperte enter para prosseguir... aperte enter";
+cout<< "BEM-VINDOO !!! ";
 getchar();
 system("clear||cls");
 cout<< "Dgite o seu nome: "<<endl;	
-cin>>nome;
+cin>>nome;	
 system("clear||cls");																							
   cout << "      MENU\n";
   cout << "1. Começar \n";
@@ -332,15 +341,16 @@ system("clear||cls");
 				}
 		     	 
 			while (i == 0 || i ==2 || i==3);
-				
-			do{
 			cout<<"Você escolheu corretamente\n";
 			cout<<"\n";
+				
+			do{
+			
 			
 			barco2();
 			cout<<"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n";	
 			cout<<"\n";
-			system("clear||cls");
+			
 			getchar();
 			barco();	
 			cout<<"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n";
@@ -348,42 +358,54 @@ system("clear||cls");
 			cout<< "2.lobo"<< endl;	
 			 	 cout<< "3.repolho"<< endl;
 					cin>>lo;
-					
-			
-			barco3();
-			cout<<"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n";
-			if (lo == 2)
-				cout<< "Você escolheu errado repita à sua escolha.\n ";
-			     cout<< "\n";
+							
+					   	if (lo == 2)
+					barco1();
+					cout<<"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n";
+			   	   	 system("cls || clear");
+				   	   	cout<< "Você escolheu errado repita à sua escolha.\n ";
+			   	     cout<< "\n";
+				 		
 			}
+		
 			while (lo == 2);		
 				 	
 				 if (lo==3)    {
+				 	 system("cls || clear");
 				
-					 cout<<"Voce escolheu corretamente,continue o trabalho \n";						
+					 cout<<"Voce escolheu corretamente,continue o trabalho \n";
+					 						
 				do{ 
 					re = 0;
+					barco3();
+					 cout<<"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n";	
+			     cout<<"\n";
 			    	
 			     
 			    	cout<<"\n";
 			    	cout<<"Decida se você quer voltar sozinho ou com algum objeto levado \n";
 			    	cout<<"1.Voltar sozinho \n";
-			    	cout<<"2.Repolho \n";
-			    	cout<<"3.Ovelha \n";
+			    	cout<<"2.Voltar com Repolho \n";
+			    	cout<<"3.Voltar com Ovelha \n";
 			    	cin>>re;
 			    	
 			    	system("clear||cls");
 			    	if (re == 2 || re == 1)
 						cout<< "Você escolheu errado repita à sua escolha.\n ";
+						cout<<"\n";
 			     	 	 cout<< "\n";
 					}
 				
 				     while(re == 1 || re == 2);	
 			    	 if (re == 3){
-			    	 	barcoov();
-			    	 	cout<<"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n";
+			    	 	cout<<"Voce escolheu corretamente,continue o trabalho \n";	
 					do{
-						cout<<"Voce escolheu corretamente,continue o trabalho \n";
+					
+						barcoov();
+			    	 
+					 	cout<<"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n";
+					 	cout<<"\n";
+					 	
 					pe = 0;
     				cout<<"Voce chegou do lado esquerdo do lago, escolha\n";
     				cout<<"1.Deixar a ovelha e voltar com o lobo\n";
@@ -394,6 +416,7 @@ system("clear||cls");
     				{
     				if(pe==2 || pe==3)
     					cout<< "Você escolheu errado repita à sua escolha.\n ";
+    					cout<<"\n";
 			     	 	 cout<< "\n";
 					}
     					
@@ -424,7 +447,7 @@ system("clear||cls");
 		else if(escolha == 2){			 			 																																									          		              
           cout <<"==============================================================================================================\n";   
           cout << " O objetivo do jogo é você passar, uma ovelha, um lobo e um repolho para o outro";
-          cout << "lado do lago.\n"; 
+          cout << " lado do lago.\n"; 
 		  cout <<"==============================================================================================================\n"; 
 		  cout<<"\n";
 		  cout << "Porém você não pode deixar a ovelha sozinha com o repolho\n";
